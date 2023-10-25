@@ -63,7 +63,7 @@ jobs:
       - name: Install deps
         run: npm ci
         working-directory: ${{ env.WORKER_NAME }}
-      - uses: cloudflare/wrangler-action@09fc6b504568cf179b085df24393f237fea6c7f6 # v3.1.1
+      - uses: cloudflare/wrangler-action@5e8484995321734668f14981c316aa9188d76ed1 # v3.3.2
         with:
           apiToken: ${{ secrets.CF_WRANGLER_API_TOKEN }}
           accountId: ${{ secrets.CF_WRANGLER_ACCOUNT_ID }}
